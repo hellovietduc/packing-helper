@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Packing Helper</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+    
+      <!-- Title bar -->
+      <div class="title-bar">
+        <p>PACKING HELPER</p>
+      </div>
+      
+      <!-- App content -->
+      <div class="content">
+      
+        <!-- Input area -->
+        <div class="input-area">
+          
+          <p>Bag weight limit (kg):</p>
+          <input type="number" id="weight-limit" value="10">
+          
+          <p>Add item:</p>
+          <input type="text" id="item-name" placeholder="Item name" value="">
+          <input type="number" id="item-worth" placeholder="Item worth (1-40)" value="">
+          <input type="number" id="item-weight" placeholder="Item weight (grams)" value="">
+          <button id="add-item-btn" class="grey-button" onclick="addItem()">Add item</button>
+          <button id="show-items-btn" class="grey-button" onclick="showItemList()">Show items</button>
+          <button id="hide-items-btn" class="grey-button" onclick="hideItemList()">Hide items</button>
+          <div id="item-list" class="item-list"></div>
+          <button id="remove-all-items-btn" class="red-button" onclick="removeAllItems()">Remove all</button>
+          
+          <p>How to pack?</p>
+          <button id="get-help-btn" class="blue-button" onclick="getHelp()">Help me!</button>
+        </div>
+        
+        <!-- Output area -->
+        <div class="output-area">
+          <p>Recommendation:</p>
+          <div id="recommendation"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
